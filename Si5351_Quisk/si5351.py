@@ -34,7 +34,7 @@ import math
 from micropython import const
 
 import machine
-from machine import I2C
+from machine import I2C, SoftI2C
 from machine import Pin
 
 
@@ -441,7 +441,8 @@ class SI5351:
     def __init__(self, data, clock, *, addr=_SI5351_ADDRESS):
         
         self.i2c_addr = addr
-        self.i2c=I2C(0, freq=400000,scl=clock,sda=data)
+        self.i2c = SoftI2C(freq=400000, scl=Pin(clock, Pin.OUT, Pin.PULL_UP), 
+                          sda=Pin(data, Pin.OUT, Pin.PULL_UP))
 
         self.oldmult = 0
 
@@ -503,12 +504,11 @@ class SI5351:
 
     
 
-    def set_phase( self, clock, pll, phase ):
-        
-       	phase = phase & 0b01111111;
-        self._write_u8(clock.phase, phase);
-        self._write_u8(_SI5351_REGISTER_177_PLL_RESET, (1 << 7) | (1 << 5))
-        self.outputs_enabled = True
+def set_phase(self, clock, pll, phase):
+    phase = phase & 0b01111111  # Removed semicolon
+    self._write_u8(clock.phase, phase)  # Removed semicolon
+    self._write_u8(_SI5351_REGISTER_177_PLL_RESET, (1 << 7) | (1 << 5))
+    self.outputs_enabled = True
 
 
     def set_frequency( self, freq, clock, pll, mult ):
