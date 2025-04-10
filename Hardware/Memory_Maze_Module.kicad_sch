@@ -1,0 +1,379 @@
+(kicad_sch
+	(version 20250114)
+	(generator "eeschema")
+	(generator_version "9.0")
+	(uuid "8b70f459-601d-44c7-8061-59c8b6e32952")
+	(paper "USLetter")
+	(title_block
+		(title "Memory Maze Module")
+		(date "2025-01-28")
+		(rev "1.0.0")
+		(company "WWU")
+		(comment 1 "Nathan Snarr")
+	)
+	(lib_symbols)
+	(no_connect
+		(at 128.27 81.28)
+		(uuid "44fe656d-fee6-4b67-9f39-e88bce2637e3")
+	)
+	(no_connect
+		(at 128.27 77.47)
+		(uuid "ebc93447-88c0-4866-979c-efdfe2976f91")
+	)
+	(hierarchical_label "MatrixR3"
+		(shape input)
+		(at 144.78 99.06 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "4e87e295-da33-4847-8d73-25fbdb26de87")
+	)
+	(hierarchical_label "MatrixC1"
+		(shape input)
+		(at 144.78 101.6 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "78c8ad61-5243-4e64-9a24-563f03701898")
+	)
+	(hierarchical_label "MatrixR1"
+		(shape input)
+		(at 144.78 93.98 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "91da2ef9-ea8c-42cd-84a2-e0b844270a66")
+	)
+	(hierarchical_label "RightButton"
+		(shape output)
+		(at 144.78 123.19 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "ab38512c-ef88-4c7b-a62a-c467ec4a03db")
+	)
+	(hierarchical_label "LeftButton"
+		(shape output)
+		(at 144.78 119.38 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "b52754e9-f992-4a5f-a480-48764ea70486")
+	)
+	(hierarchical_label "AccelSCL"
+		(shape output)
+		(at 144.78 81.28 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "b56a3f77-a919-45a3-8e90-ef65e3cef4f5")
+	)
+	(hierarchical_label "MatrixR2"
+		(shape input)
+		(at 144.78 96.52 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "c0c028c8-3d95-4886-a692-ba4780ee69ad")
+	)
+	(hierarchical_label "AccelSDA"
+		(shape output)
+		(at 144.78 77.47 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "d835b3fa-ec11-4674-a454-828189bbdb52")
+	)
+	(hierarchical_label "MatrixC2"
+		(shape input)
+		(at 144.78 104.14 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "f51bd2dc-3d1d-450c-a7ab-5dfbf9c0972a")
+	)
+	(hierarchical_label "MatrixC3"
+		(shape input)
+		(at 144.78 106.68 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "f5baff11-9867-4a21-82b0-e393ed6f9e2b")
+	)
+	(sheet
+		(at 128.27 74.93)
+		(size 16.51 8.89)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "84f26d4d-dd13-4dcb-9798-560206cf8e3f")
+		(property "Sheetname" "MPU 6050 Accelerometer"
+			(at 128.27 74.2184 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "Accelerometer.kicad_sch"
+			(at 128.27 84.4046 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "SDA" output
+			(at 144.78 77.47 0)
+			(uuid "9a09dffd-d568-4c1f-bc75-261d9ce98fa8")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "SCL" output
+			(at 144.78 81.28 0)
+			(uuid "504a60df-1e0c-4be6-85c8-14e51e212a2b")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "AUX_SDA" input
+			(at 128.27 77.47 180)
+			(uuid "c60796d3-2fc0-47b0-967b-35a7c40d238e")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "AUX_SCL" input
+			(at 128.27 81.28 180)
+			(uuid "cf495193-3c71-4174-ba9d-e306893ba70e")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(instances
+			(project "Audio_in_usd_sound_rp_pico"
+				(path "/4d45bd57-073c-4b61-a56d-da596d50cf10/49dbe52f-a141-41f8-a1f2-37269c57dcf4"
+					(page "17")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 128.27 116.84)
+		(size 16.51 8.89)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "d77dc542-ae53-45a0-ba9e-38709ffa3d5d")
+		(property "Sheetname" "Left Right Buttons"
+			(at 128.27 116.1284 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "Left_Right_Buttons.kicad_sch"
+			(at 128.27 126.3146 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "LeftButton" output
+			(at 144.78 119.38 0)
+			(uuid "8fe971bf-b3d1-4e0d-aa17-8df8b9de963f")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "RightButton" output
+			(at 144.78 123.19 0)
+			(uuid "ac2f10cb-acc5-4120-8c52-a35ea1062b4d")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(instances
+			(project "Audio_in_usd_sound_rp_pico"
+				(path "/4d45bd57-073c-4b61-a56d-da596d50cf10/49dbe52f-a141-41f8-a1f2-37269c57dcf4"
+					(page "16")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 128.27 91.44)
+		(size 16.51 17.78)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "e0438928-9ad6-4e5b-a6ed-ab6c64f7929b")
+		(property "Sheetname" "3X3 LED Matrix"
+			(at 128.27 90.7284 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "LED_Matrix.kicad_sch"
+			(at 128.27 109.8046 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "Row1" input
+			(at 144.78 93.98 0)
+			(uuid "7eaa7e62-5ed1-4a67-ad5c-985438df0693")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "Row2" input
+			(at 144.78 96.52 0)
+			(uuid "ac42f6fd-012f-4f4b-bdcd-d9674a2ea060")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "Row3" input
+			(at 144.78 99.06 0)
+			(uuid "1a6d396a-8a28-4486-a6cd-d6a1dc070d8a")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "Col3" input
+			(at 144.78 106.68 0)
+			(uuid "5db75fdf-ca7d-4568-8ea7-d3613e0fd149")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "Col1" input
+			(at 144.78 101.6 0)
+			(uuid "9d370900-6af4-4b7c-8d59-ae337a2e13f9")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "Col2" input
+			(at 144.78 104.14 0)
+			(uuid "2dea11cf-6aee-40b1-8a79-e5a504805aec")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(instances
+			(project "Audio_in_usd_sound_rp_pico"
+				(path "/4d45bd57-073c-4b61-a56d-da596d50cf10/49dbe52f-a141-41f8-a1f2-37269c57dcf4"
+					(page "18")
+				)
+			)
+		)
+	)
+)

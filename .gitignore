@@ -1,0 +1,24 @@
+# Add to .gitignore file
+__pycache__/
+*.py[cod]
+*$py.class
+.ipynb_checkpoints/
+*.so
+.env
+.venv
+env/
+venv/
+ENV/
+.DS_Store
+Thumbs.db
+# KiCad temporary files
+*.kicad_pcb-bak
+*.kicad_sch-bak
+*-backups/
+*.bck
+*.kicad_prl
+fp-info-cache
+*-rescue.lib
+*-cache.*
+*-save.pro
+*-save.kicad_pcb
