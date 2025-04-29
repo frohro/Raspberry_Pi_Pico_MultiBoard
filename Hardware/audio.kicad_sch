@@ -4750,6 +4750,17 @@
 			(embedded_fonts no)
 		)
 	)
+	(text "The pin numbers are wrong\nfor the Si4732.  The right\nside is reversed."
+		(exclude_from_sim no)
+		(at 119.634 133.858 0)
+		(effects
+			(font
+				(face "KiCad Font")
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "053fd1ea-ef04-4f82-b57d-35e852c1181f")
+	)
 	(junction
 		(at 121.92 62.23)
 		(diameter 0)
