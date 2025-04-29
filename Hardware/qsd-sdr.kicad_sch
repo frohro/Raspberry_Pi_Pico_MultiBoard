@@ -4430,6 +4430,16 @@
 			(embedded_fonts no)
 		)
 	)
+	(text "Why are these 10k different?"
+		(exclude_from_sim no)
+		(at 87.884 39.37 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "09703a3f-8ec1-4585-9502-2cdd10547657")
+	)
 	(text "Sequence of clocks:  Q_CLK, I_CLK\n0 degrees:   1,1\n90 degrees:  1,0\n180 degrees: 0,0\n270 degrees: 0,1"
 		(exclude_from_sim no)
 		(at 125.73 54.61 0)
