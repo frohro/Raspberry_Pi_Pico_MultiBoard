@@ -441,7 +441,7 @@ class SI5351:
     def __init__(self, data, clock, *, addr=_SI5351_ADDRESS):
         
         self.i2c_addr = addr
-        self.i2c = SoftI2C(freq=400000, scl=Pin(clock, Pin.OUT, Pin.PULL_UP), 
+        self.i2c = SoftI2C(freq=100000, scl=Pin(clock, Pin.OUT, Pin.PULL_UP), 
                           sda=Pin(data, Pin.OUT, Pin.PULL_UP))
 
         self.oldmult = 0

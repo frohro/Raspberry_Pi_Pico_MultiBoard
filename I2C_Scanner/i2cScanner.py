@@ -1,4 +1,4 @@
-# ropython i2c scanner
+# Micropython i2c scanner
 # Scanner i2c en MicroPython | MicroPython i2c scanner
 # Renvoi l'adresse en decimal et hexa de chaque device connecte sur le bus i2c
 # Return decimal and hexa adress of each i2c device

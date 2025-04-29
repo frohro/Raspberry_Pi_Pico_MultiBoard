@@ -4,7 +4,8 @@ from machine import Pin, SoftI2C
 import ssd1306
 
 #You can choose any other combination of I2C pins
-i2c = SoftI2C(scl=Pin(5), sda=Pin(4))
+# Change the i2c initialization to include a frequency parameter
+i2c = SoftI2C(scl=Pin(5), sda=Pin(4))  # 100 kHz (default is typically 400 kHz)
 
 oled_width = 128
 oled_height = 64
